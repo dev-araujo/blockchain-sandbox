@@ -93,8 +93,7 @@ Abra seu navegador e visite `http://localhost:3000` ✨✨
 #### Autor 👷
 
 
-
-[![linkedin](https://media.licdn.com/dms/image/v2/D4D03AQGRDOBRW1cYgA/profile-displayphoto-shrink_200_200/B4DZN3t6VvHQAY-/0/1732880345005?e=1743033600&v=beta&t=0oJW8bm6Mkjj7iC4s5aVe8Tvh63kQwXItyI4ElUAv_o)](https://www.linkedin.com/in/araujocode/)
+<img src="https://avatars.githubusercontent.com/u/97068163?v=4" width=120 />
 
 [Adriano P Araujo](https://www.linkedin.com/in/araujocode/)
 
