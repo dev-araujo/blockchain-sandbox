@@ -1,7 +1,24 @@
 import { ExternalLinkIcon } from "lucide-react";
 import Link from "next/link";
 import { TransactionsList } from "@/components/txns-list";
-import { fetchAddressTransactions } from "@/lib/fetch-address-transactions";
+import { AddressBalance } from "@/components/address-balance";
+import { Suspense } from "react";
+
+function AddressBalanceSkeleton() {
+  return (
+    <div className="flex flex-col sm:flex-row items-center gap-4 p-4 border rounded-md border-gray-800 bg-gray-900/50 animate-pulse">
+      <div className="flex items-center gap-3">
+        <div className="h-6 w-6 bg-gray-700 rounded" />
+        <div className="h-6 w-28 bg-gray-700 rounded" />
+      </div>
+      <div className="flex items-center gap-4 text-gray-400">
+        <div className="h-4 w-px bg-gray-700" />
+        <div className="h-4 w-24 bg-gray-700 rounded" />
+        <div className="h-4 w-24 bg-gray-700 rounded" />
+      </div>
+    </div>
+  );
+}
 
 export default async function Activity({
   params,
@@ -9,8 +26,6 @@ export default async function Activity({
   params: Promise<{ address: string }>;
 }) {
   const { address } = await params;
-
-  const initialTransactions = await fetchAddressTransactions({ address });
 
   return (
     <main className="flex flex-col p-8 gap-8">
@@ -28,7 +43,11 @@ export default async function Activity({
         </Link>
       </div>
 
-      <TransactionsList address={address} transactions={initialTransactions} />
+      <Suspense fallback={<AddressBalanceSkeleton />}>
+        <AddressBalance address={address} />
+      </Suspense>
+
+      <TransactionsList address={address} />
     </main>
   );
 }

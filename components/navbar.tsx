@@ -1,7 +1,7 @@
 "use client";
 
-import { useEffect, useState } from "react";
-import { usePathname, useRouter } from "next/navigation";
+import { useState } from "react";
+import { useRouter } from "next/navigation";
 
 import Link from "next/link";
 import { abbreviateAddress } from "@/lib/stx-utils";
@@ -11,21 +11,10 @@ import { useStacks } from "@/hooks/use-stacks";
 export function Navbar() {
   const ADDRESS_WALLET_MOCK = "SP3WCFX1JC1PMMFD1XZZCCVSS88TBJV3A8JFPD4XZ";
   const router = useRouter();
-  const pathname = usePathname();
   const [searchAddress, setSearchAddress] = useState(ADDRESS_WALLET_MOCK);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
   const { userData, connectWallet, disconnectWallet } = useStacks();
-
-  const currentAddress = pathname.split("/")[1];
-
-  useEffect(() => {
-    if (!currentAddress && searchAddress === ADDRESS_WALLET_MOCK) {
-      setIsLoading(true);
-
-      handleSearch();
-    }
-  }, [currentAddress, searchAddress, router]);
 
   function handleSearch() {
     if (!searchAddress.startsWith("SP")) {
@@ -95,6 +84,7 @@ export function Navbar() {
               }
             }}
             disabled={isLoading}
+            suppressHydrationWarning={true}
           />
         </div>
 

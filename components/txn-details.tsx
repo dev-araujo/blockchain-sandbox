@@ -114,7 +114,7 @@ export function TransactionDetail({ result }: TransactionDetailProps) {
             <span className="font-normal whitespace-nowrap">
               By{" "}
               <Link
-                href={`${result.tx.sender_address}`}
+                href={`/${result.tx.sender_address}`}
                 className="hover:underline transition-all"
               >{`${abbreviateAddress(result.tx.sender_address)}`}</Link>
             </span>

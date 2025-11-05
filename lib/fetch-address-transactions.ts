@@ -1,4 +1,3 @@
-// FROM https://docs.hiro.so/stacks/api/transactions/recent-transactions
 
 interface FetchAddressTransactionsArgs {
   address: string;
