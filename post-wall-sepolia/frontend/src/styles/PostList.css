@@ -1,0 +1,67 @@
+.post-list {
+  margin-bottom: var(--spacing-double);
+}
+
+.post-list__items {
+  list-style: none;
+  padding: 0;
+}
+
+.post-list__item {
+  background-color: #f9f9f9;
+  border: 1px solid var(--color-border);
+  padding: var(--spacing-unit);
+  margin-bottom: var(--spacing-unit);
+  border-radius: 5px;
+  height: fit-content;
+}
+
+.post-list__item-header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.post-list__item-footer {
+  display: flex;
+  align-items: center;
+}
+
+.post-list__item-avatar {
+  width: 40px;
+  margin-right: var(--spacing-unit);
+  border-radius: 100%;
+}
+
+.post-list__item-author {
+  color: var(--color-text);
+  font-size: var(--font-size-small);
+  cursor: pointer;
+}
+
+.post-list__item-author .clip-copy {
+  margin-left: 4px;
+}
+
+.post-list__item-author .clip-copy .bx {
+  font-size: 18px !important;
+}
+
+.post-list__item-timestamp {
+  font-size: var(--font-size-small);
+  color: var(--color-text-light);
+}
+
+.post-list__item-message {
+  font-size: var(--font-size-base);
+  color: var(--color-text);
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+@media (max-width: 690px) {
+  .post-list__item {
+    width: 90%;
+  }
+}

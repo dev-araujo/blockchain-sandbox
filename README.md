@@ -8,11 +8,47 @@ Sandbox para estudos e experimentos com blockchain e Web3.
 Mini explorador de blocos para a blockchain Stacks.
 
 - **Repositório original:** [dev-araujo/account-history__Stacks_learnWeb3-dao](https://github.com/dev-araujo/account-history__Stacks_learnWeb3-dao)
-- **Localização:** `/stacks-block-explorer`
+- **Localização:** [/stacks-block-explorer](./stacks-block-explorer)
 - **Tecnologias:** Next.js, React, TypeScript, Tailwind CSS, Stacks.js
 - **Descrição:** Aplicação que permite conectar carteiras Stacks e explorar histórico de transações
 
-[📖 Ver documentação completa →](./stacks-block-explorer/README.md)
+[📖 Ver documentação →](./stacks-block-explorer/README.md)
+
+---
+
+### foundry-fundamentals-cyfrin
+Estudos do curso Foundry Fundamentals da Cyfrin Updraft.
+
+- **Repositório original:** [dev-araujo/foundry-fundamentals__Cyfrin-Updraft-sandbox](https://github.com/dev-araujo/foundry-fundamentals__Cyfrin-Updraft-sandbox) (arquivado)
+- **Localização:** [/foundry-fundamentals-cyfrin](./foundry-fundamentals-cyfrin)
+- **Tecnologias:** Foundry, Solidity, Smart Contracts
+- **Descrição:** Projetos e exercícios do curso de fundamentos do Foundry para desenvolvimento de smart contracts
+
+[📖 Ver documentação →](./foundry-fundamentals-cyfrin/README.md)
+
+---
+
+### bitcoin-explorer-dojo
+Explorador de blocos Bitcoin conectado ao nó Bitcoin Core.
+
+- **Repositório original:** [dev-araujo/explorer-btc__dojo-nearx](https://github.com/dev-araujo/explorer-btc__dojo-nearx) (arquivado)
+- **Localização:** [/bitcoin-explorer-dojo](./bitcoin-explorer-dojo)
+- **Tecnologias:** React, TypeScript, Node.js, Bitcoin Core, Oracle Cloud
+- **Descrição:** Explorador de blocos que se conecta a um nó Bitcoin para consultar informações da blockchain
+
+[📖 Ver documentação →](./bitcoin-explorer-dojo/README.md)
+
+---
+
+### post-wall-sepolia
+Mural descentralizado na rede Testnet Sepolia.
+
+- **Repositório original:** [dev-araujo/post-wall-web3](https://github.com/dev-araujo/post-wall-web3) (arquivado)
+- **Localização:** [/post-wall-sepolia](./post-wall-sepolia)
+- **Tecnologias:** React, TypeScript, Foundry, Solidity, Smart Contracts
+- **Descrição:** Aplicação descentralizada que permite postar mensagens em um mural armazenado na blockchain Sepolia
+
+[📖 Ver documentação →](./post-wall-sepolia/README.md)
 
 ---
 
@@ -21,13 +57,21 @@ Mini explorador de blocos para a blockchain Stacks.
 ```
 blockchain-sandbox/
 ├── README.md (este arquivo)
-└── stacks-block-explorer/
-    ├── app/
-    ├── components/
-    ├── hooks/
-    ├── lib/
-    ├── public/
-    ├── package.json
+├── stacks-block-explorer/
+│   ├── app/
+│   ├── components/
+│   └── README.md
+├── foundry-fundamentals-cyfrin/
+│   ├── src/
+│   ├── test/
+│   └── README.md
+├── bitcoin-explorer-dojo/
+│   ├── frontend/
+│   ├── backend/
+│   └── README.md
+└── post-wall-sepolia/
+    ├── frontend/
+    ├── contracts/
     └── README.md
 ```
 
@@ -54,6 +98,30 @@ npm run dev
 
 Acesse `http://localhost:3000` no navegador.
 
+#### Exemplo: Foundry Fundamentals
+
+```bash
+cd foundry-fundamentals-cyfrin
+forge install
+forge test
+```
+
+#### Exemplo: Bitcoin Explorer
+
+```bash
+cd bitcoin-explorer-dojo/frontend
+npm install
+npm start
+```
+
+#### Exemplo: Post Wall Sepolia
+
+```bash
+cd post-wall-sepolia/frontend
+npm install
+npm run dev
+```
+
 Consulte o README dentro de cada pasta para instruções detalhadas.
 
 ---
@@ -71,10 +139,18 @@ Para adicionar um novo projeto de estudo em blockchain/Web3:
 
 ## Tecnologias
 
+### Blockchains
 - **Stacks** - Blockchain de segunda camada sobre Bitcoin
-- **Next.js** - Framework React
+- **Bitcoin** - Blockchain original
+- **Ethereum** - Blockchain com smart contracts
+- **Sepolia** - Testnet Ethereum
+
+### Desenvolvimento
+- **Foundry** - Framework para smart contracts
+- **Solidity** - Linguagem para smart contracts
+- **Next.js / React** - Frameworks frontend
 - **TypeScript** - Linguagem tipada
-- **Tailwind CSS** - Framework CSS
+- **Node.js** - Runtime JavaScript
 
 ---
 

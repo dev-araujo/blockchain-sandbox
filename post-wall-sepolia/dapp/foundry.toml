@@ -1,0 +1,9 @@
+[profile.default]
+src = 'src'
+out = 'out'
+libs = ['lib']
+remappings = ['ds-test/=lib/ds-test/src/']
+
+[rpc_endpoints]
+sepolia = "${SEPOLIA_RPC_URL}"
+
