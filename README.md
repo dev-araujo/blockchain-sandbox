@@ -1,99 +1,81 @@
+# Blockchain Sandbox
 
+Sandbox para estudos e experimentos com blockchain e Web3.
 
-# Mini Explorador de Blocos Stacks
-  <img  src="https://img.shields.io/static/v1?label=license&message=MIT&color=5965E0&labelColor=121214" alt="License">
+## Projetos
 
+### stacks-block-explorer
+Mini explorador de blocos para a blockchain Stacks.
 
-Este projeto é um mini explorador de blocos construído usando a stack de tecnologia [Stacks](https://www.stacks.co/) uma blockchain de segunda camada em cima do BTC 😲. Ele permite que os usuários visualizem o histórico de transações de uma conta Stacks.
+- **Repositório original:** [dev-araujo/account-history__Stacks_learnWeb3-dao](https://github.com/dev-araujo/account-history__Stacks_learnWeb3-dao)
+- **Localização:** `/stacks-block-explorer`
+- **Tecnologias:** Next.js, React, TypeScript, Tailwind CSS, Stacks.js
+- **Descrição:** Aplicação que permite conectar carteiras Stacks e explorar histórico de transações
 
-## Sobre
-
-Este projeto é baseado no tutorial Construindo um Mini Explorador de Blocos do [currículo da Graduação de Desenvolvedor Stacks da DAO LearnWeb3](https://learnweb3.io/degrees/stacks-developer-degree/build-full-stack-apps-on-stacks/building-a-mini-block-explorer/). 
-
-O projeto permite ao usuário: 
-
--   Conectar suas carteiras Stacks (por exemplo, **Leather** ou **Xverse**)
--   Visualizar o histórico de transações de sua própria conta
--   Pesquisar o histórico de transações de qualquer endereço Stacks válido
--   Carregar mais transações em um formato paginado
-
-## Resultado  ✨
-
-![mobile view](./assets/mobile.png)
-
-<details>
-<summary> <h2>Versão Desktop</h2></summary>
-
-![desktop view](./assets/desktop.png)
-
-</details>
-
-
-## Feito com 🔨
-
-- Next.js
-- [@stacks/connect](https://www.npmjs.com/package/@stacks/connect)
-- [@stacks/transactions](https://www.npmjs.com/package/@stacks/transactions)
-- [Hiro](https://docs.hiro.so/stacks/api)
-
-
-
-## Rodando local
-
-### Pré-requisitos
-
--   Node.js (v16 ou posterior)
--   npm (v8 ou posterior)
--   Uma carteira Stacks (por exemplo, Leather, Xverse)
--   Familiaridade com React, Next.js e TypeScript
-
-### Passo à Passo
-
-1.  Clone este repositório:
-
-```bash
-git clone https://github.com/dev-araujo/account-history_Stacks.git
-```
-
-
-2.  Instale as dependências:
-
-
-```bash
-npm install
-```
-
-
-3.  Inicie o servidor de desenvolvimento:
-
-
-```bash
-npm run dev
-```
-
-Abra seu navegador e visite `http://localhost:3000` ✨✨
-
-## Uso
-
-1.  **Conectando sua Carteira:** Clique no botão "Conectar Carteira" e escolha sua carteira Stacks. Siga as instruções na carteira para conectar sua conta.
-2.  **Visualizando seu Histórico de Transações:** Depois que sua carteira estiver conectada, o aplicativo será redirecionado automaticamente para uma página que exibe o histórico de transações da sua conta.
-3.  **Pesquisando por um Endereço:** Na barra de navegação, insira um endereço Stacks válido no campo de pesquisa e pressione Enter. O aplicativo exibirá o histórico de transações para o endereço especificado.
-4.  **Carregando Mais Transações:** Clique no botão "Carregar Mais" na parte inferior da lista de transações para carregar mais transações em incrementos de 20.
-
-
-
-## Reconhecimentos
-
-  - [Graduação Desenvolvedor Stacks da DAO LearnWeb3 ](https://learnweb3.io/degrees/stacks-developer-degree/build-full-stack-apps-on-stacks/building-a-mini-block-explorer/)
-  - [Hiro](https://docs.hiro.so/stacks/api)
-  - [Stacks.js](https://www.stacks.co/)
+[📖 Ver documentação completa →](./stacks-block-explorer/README.md)
 
 ---
 
-#### Autor 👷
+## Estrutura
 
+```
+blockchain-sandbox/
+├── README.md (este arquivo)
+└── stacks-block-explorer/
+    ├── app/
+    ├── components/
+    ├── hooks/
+    ├── lib/
+    ├── public/
+    ├── package.json
+    └── README.md
+```
 
-<img src="https://avatars.githubusercontent.com/u/97068163?v=4" width=120 />
+## Como usar
 
-[Adriano P Araujo](https://www.linkedin.com/in/araujocode/)
+### Clonar o repositório
 
+```bash
+git clone https://github.com/dev-araujo/blockchain-sandbox.git
+cd blockchain-sandbox
+```
+
+### Executar um projeto específico
+
+Cada subpasta contém um projeto independente com seu próprio README e instruções de instalação.
+
+#### Exemplo: Stacks Block Explorer
+
+```bash
+cd stacks-block-explorer
+npm install
+npm run dev
+```
+
+Acesse `http://localhost:3000` no navegador.
+
+Consulte o README dentro de cada pasta para instruções detalhadas.
+
+---
+
+## Adicionar novos projetos
+
+Para adicionar um novo projeto de estudo em blockchain/Web3:
+
+1. Crie uma nova pasta na raiz do repositório
+2. Adicione o código do projeto
+3. Inclua um README.md com instruções
+4. Atualize este README principal com a descrição do novo projeto
+
+---
+
+## Tecnologias
+
+- **Stacks** - Blockchain de segunda camada sobre Bitcoin
+- **Next.js** - Framework React
+- **TypeScript** - Linguagem tipada
+- **Tailwind CSS** - Framework CSS
+
+---
+
+**Nota:** Este repositório consolida múltiplos projetos de estudo em blockchain e Web3 para facilitar organização e manutenção.
