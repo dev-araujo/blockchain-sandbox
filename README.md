@@ -58,14 +58,4 @@ npm run dev
 
 Acesse `http://localhost:3000` no navegador.
 
----
 
-## Adicionar novos projetos
-
-1. Crie uma nova pasta na raiz
-2. Adicione código e README
-3. Atualize este README
-
----
-
-**Nota:** Este repositório consolida projetos de estudo em blockchain e Web3.
