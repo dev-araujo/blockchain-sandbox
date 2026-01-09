@@ -4,9 +4,9 @@ Repositório com estudos e experimentos utilizando **blockchain** e **Web3** ⛓
 
 ## Índice
 
-*   [Stacks Block Explorer](./stacks-block-explorer)
+*   [Bitcoin Explorer Dojo](./bitcoin-explorer-dojo) ⭐
+*   [Stacks Block Explorer](./stacks-block-explorer) ⭐
 *   [Foundry Fundamentals Cyfrin](./foundry-fundamentals-cyfrin)
-*   [Bitcoin Explorer Dojo](./bitcoin-explorer-dojo)
 *   [Post Wall Sepolia](./post-wall-sepolia)
 
 ---
