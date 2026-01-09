@@ -3,6 +3,8 @@
 
 **First project** of the 5-week [NearX](https://nearx.com.br/pt/home) study on development on the Bitcoin network and Lightning Network! 😲 🚀
 
+> https://explorer-btc.vercel.app/
+
 # 🤺 About the Project
 
 This project is a **Block Explorer** that connects to the Bitcoin node and has the following features:
