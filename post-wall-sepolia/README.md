@@ -15,7 +15,7 @@ Ela foi construída usando **React**, **TypeScript** e **Solidity**, com o **Fou
 
 O resultado pode ser conferido ➡️ [**AQUI**](https://post-wall-iota.vercel.app/)
 
-![interface do meu dapp](https://raw.githubusercontent.com/dev-araujo/post-wall-web3/refs/heads/main/assets/interface.png)
+![interface do meu dapp](https://github.com/dev-araujo/blockchain-sandbox/blob/main/post-wall-sepolia/assets/interface.png)
 
 ## Funcionalidades
 
